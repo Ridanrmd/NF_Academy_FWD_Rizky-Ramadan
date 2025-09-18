@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 6 RWD - Rizky Ramadan</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/Childe Wallpaper.jpg"
+            class="d-block w-100"
+            style="height: 100px; object-fit: cover"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/Genshin Impact Version 5.6 Wallpaper (feat. Fontaine & Natlan characters).png"
+            class="d-block w-100"
+            alt="..."
+            style="height: 100px; object-fit: cover"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/Skirk Wallpaper.jpg"
+            class="d-block w-100"
+            alt="..."
+            style="height: 100px; object-fit: cover"
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="img/logo.svg"
+            alt="Logo"
+            width="158"
+            height="35"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavAltMarkup"
+        >
+          <div class="navbar-nav nav-underline">
+            <a class="nav-link" href="home.html" target="mainFrame">Home</a>
+            <a class="nav-link" href="study.html" target="mainFrame">Study</a>
+            <a class="nav-link" href="gallery.html" target="mainFrame"
+              >Gallery</a
+            >
+            <a class="nav-link" href="datatable.html" target="mainFrame"
+              >Datatable</a
+            >
+            <a
+              class="nav-link bg-primary text-white rounded"
+              href="login.html"
+              target="mainFrame"
+              >Login</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="flex-grow-1">
+      <div class="container vh-100">
+        <div class="d-flex flex-column flex-lg-row h-100">
+          <!-- Sidebar -->
+          <aside class="content col-12 col-lg-4 p-4 bg-primary text-white">
+            <div
+              class="navbar-nav gap-3 nav-underline d-flex flex-row flex-lg-column"
+            >
+              <a
+                class="nav-link text-white"
+                href="https://nfacademy.id/"
+                target="_blank"
+                >NF Academy</a
+              >
+              <a
+                class="nav-link text-white"
+                href="https://sinufia.nfacademy.id/"
+                target="_blank"
+                >Sinufia</a
+              >
+              <a
+                class="nav-link text-white"
+                href="https://nurulfikri.ac.id/"
+                target="_blank"
+                >NurulFikri</a
+              >
+              <a
+                class="nav-link text-white"
+                href="https://www.instagram.com/rydan.rmd/"
+                target="_blank"
+                >My Instagram</a
+              >
+              <a
+                class="nav-link text-white"
+                href="https://www.linkedin.com/in/rizky-ramadan-500737217/"
+                target="_blank"
+                >My Linkedin</a
+              >
+            </div>
+          </aside>
+
+          <!-- Main Content -->
+          <div class="mainContent col-lg-8 px-3 min-vh-100 min-lg-vh-100">
+            <iframe
+              src="home.html"
+              frameborder="0"
+              name="mainFrame"
+              class="w-100 h-100"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="#"
+            class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1"
+            aria-label="Bootstrap"
+            ><img
+              src="img/logo.svg"
+              alt="Logo"
+              width="158"
+              height="35"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+        </div>
+
+        <span class="mb-3 mb-md-0 text-body-secondary"
+          >© 2025 Rizky Ramadan UPNVJ</span
+        >
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3">
+            <a
+              href="https://www.instagram.com/rydan.rmd/"
+              target="_blank"
+              class="text-body-secondary"
+              aria-label="Instagram"
+            >
+              <img
+                src="img/icons8-instagram.svg"
+                alt="Instagram"
+                width="24"
+                height="24"
+              />
+            </a>
+          </li>
+          <li class="ms-3">
+            <a
+              href="https://www.linkedin.com/in/rizky-ramadan-500737217/"
+              target="_blank"
+              class="text-body-secondary"
+              aria-label="Instagram"
+            >
+              <img
+                src="img/icons8-linkedin.svg"
+                alt="Linkedin"
+                width="24"
+                height="24"
+              />
+            </a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
