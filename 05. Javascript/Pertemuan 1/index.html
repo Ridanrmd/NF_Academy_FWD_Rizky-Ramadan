@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tugas Pertemuan 1 Javascript</title>
+  </head>
+  <body>
+    <h1>Tugas 1 - Javascript</h1>
+    <h2>Luas Bangun Datar</h2>
+
+    <!--  PERSEGI PANJANG  -->
+    <h2>Persegi Panjang</h2>
+    <!-- Input panjang untuk persegi panjang -->
+    <p>Panjang</p>
+    <input type="number" id="panjangPersegi" placeholder="Masukkan panjang" />
+    <!-- Input lebar untuk persegi panjang -->
+    <p>Lebar</p>
+    <input type="number" id="lebarPersegi" placeholder="Masukkan lebar" />
+    <br /><br />
+    <!-- Tombol untuk menghitung luas persegi panjang -->
+    <button onclick="hitungPersegiPanjang()">Hitung Luas</button>
+    <br /><br />
+    <!-- Area untuk menampilkan hasil luas persegi panjang -->
+    <div id="hasilPersegiPanjang"></div>
+
+    <!--  BUJUR SANGKAR  -->
+    <h2>Bujur Sangkar</h2>
+    <!-- Input sisi untuk bujur sangkar -->
+    <p>Sisi</p>
+    <input type="number" id="sisiBujurSangkar" placeholder="Masukkan sisi" />
+    <br /><br />
+    <!-- Tombol untuk menghitung luas bujur sangkar -->
+    <button onclick="hitungBujurSangkar()">Hitung Luas</button>
+    <br /><br />
+    <!-- Area untuk menampilkan hasil luas bujur sangkar -->
+    <div id="hasilBujurSangkar"></div>
+
+    <!--  SEGITIGA  -->
+    <h2>Segitiga</h2>
+    <!-- Input alas untuk segitiga -->
+    <p>Alas</p>
+    <input type="number" id="alasSegitiga" placeholder="Masukkan alas" />
+    <!-- Input tinggi untuk segitiga -->
+    <p>Tinggi</p>
+    <input type="number" id="tinggiSegitiga" placeholder="Masukkan tinggi" />
+    <br /><br />
+    <!-- Tombol untuk menghitung luas segitiga -->
+    <button onclick="hitungSegitiga()">Hitung Luas</button>
+    <br /><br />
+    <!-- Area untuk menampilkan hasil luas segitiga -->
+    <div id="hasilSegitiga"></div>
+
+    <script>
+      // Fungsi untuk menghitung luas persegi panjang
+      function hitungPersegiPanjang() {
+        let panjang = document.getElementById("panjangPersegi").value; // ambil nilai panjang dari input dengan Id "panjangPersegi"
+        let lebar = document.getElementById("lebarPersegi").value; // ambil nilai lebar dari input dengan Id "lebarPersegi"
+
+        let luas = panjang * lebar; // hitung luas
+        document.getElementById("hasilPersegiPanjang").innerText =
+          "Luas Persegi Panjang = " + luas; // tampilkan hasil pada Id "hasilPersegiPanjang"
+      }
+
+      // Fungsi untuk menghitung luas bujur sangkar
+      function hitungBujurSangkar() {
+        let sisi = document.getElementById("sisiBujurSangkar").value; // ambil nilai sisi dari input dengan Id "sisiBujurSangkar"
+
+        let luas = sisi * sisi; // hitung luas
+        document.getElementById("hasilBujurSangkar").innerText =
+          "Luas Bujur Sangkar = " + luas; // tampilkan hasil pada Id "hasilBujurSangkar"
+      }
+
+      // Fungsi untuk menghitung luas segitiga
+      function hitungSegitiga() {
+        let alas = document.getElementById("alasSegitiga").value; // ambil nilai alas dari input dengan Id "alasSegitiga"
+        let tinggi = document.getElementById("tinggiSegitiga").value; // ambil nilai tinggi dari input dengan Id "tinggiSegitiga"
+
+        let luas = 0.5 * alas * tinggi; // hitung luas
+        document.getElementById("hasilSegitiga").innerText =
+          "Luas Segitiga = " + luas; // tampilkan hasil pada Id "hasilSegitiga"
+      }
+    </script>
+  </body>
+</html>
