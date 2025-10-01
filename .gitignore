@@ -1,0 +1,8 @@
+# Abaikan semua file
+*
+
+# Tapi jangan abaikan folder 06
+!06. ReactJS/
+!06. ReactJS/Pertemuan1/
+!06. ReactJS/Pertemuan1/tugas1_react_RizkyRamadan_UPNVJ/
+!06. ReactJS/Pertemuan1/tugas1_react_RizkyRamadan_UPNVJ/**
