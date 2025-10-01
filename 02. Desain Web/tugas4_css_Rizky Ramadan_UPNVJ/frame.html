@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tugas 3 - HTML iFrame</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header {
+        height: 10%;
+      }
+
+      .nav {
+        height: 5%;
+      }
+
+      .main {
+        flex: 1;
+        display: flex;
+      }
+
+      .left {
+        width: 20%;
+      }
+
+      .content {
+        width: 60%;
+      }
+
+      .right {
+        width: 20%;
+      }
+
+      .footer {
+        height: 10%;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <iframe src="header.html" name="header"> </iframe>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav">
+      <iframe src="nav.html" name="nav"></iframe>
+    </div>
+
+    <!-- Tengah: left - content - right -->
+    <div class="main">
+      <div class="left">
+        <iframe src="left.html" name="left"></iframe>
+      </div>
+      <div class="content">
+        <iframe src="home.html" name="content"></iframe>
+      </div>
+      <div class="right">
+        <iframe src="right.html" name="right"></iframe>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <iframe src="footer.html" name="footer"></iframe>
+    </div>
+  </body>
+</html>
