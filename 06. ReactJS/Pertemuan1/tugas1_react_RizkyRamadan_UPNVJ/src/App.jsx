@@ -44,6 +44,15 @@ function App() {
           </li>
         </ul>
 
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search Book"
+            aria-label="Search"
+          />
+        </form>
+
         <div className="col-md-3 text-end">
           <button type="button" className="btn btn-outline-primary me-2">
             Login
