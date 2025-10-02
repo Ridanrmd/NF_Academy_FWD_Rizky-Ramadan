@@ -2,6 +2,7 @@ import { Link, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Team from "./pages/Tim";
 import Contact from "./pages/Contact";
+import Books from "./pages/Books";
 
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
             </Link>
           </li>
           <li>
-            <a href="#" className="nav-link px-2">
+            <a href="/books" className="nav-link px-2">
               Book
             </a>
           </li>
@@ -68,6 +69,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/team" element={<Team />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/books" element={<Books />} />
       </Routes>
 
       {/* Footer */}
